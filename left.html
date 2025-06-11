@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-<title>DBM Guild</title>
+<title>[DBM] Adventurer Guild -- Roleplaying Stories in Ultima Online</title>
 
 <style type="text/css"><!--
 .left {text-decoration: none; color: #0000FF; font-weight: bold}
@@ -90,6 +90,36 @@ a:hover {  background-color: #000000; color: #00FFFF}
     </td>
   </tr>
 </table>
-<p align="center"><a href="midi/none.html" target="buttom" class="music">Stop BGM</a></p>
+
+
+<p align="center"><b>
+【UO - Sailing】
+</b></p>
+
+<p align="center"><audio id="bgm2" src="music/uo-sailing.ogg" loop preload="auto"></audio>
+  <button onclick="const bgm=document.getElementById('bgm2'); bgm.volume = 0.8; bgm.play();">▶️ DBM鎮會船歌</button>
+</p><p align="center">
+  <button onclick="const bgm=document.getElementById('bgm2'); bgm.pause(); bgm.currentTime = 0;">⏹️停</button>
+  <button onclick="let bgm=document.getElementById('bgm2'); bgm.volume = Math.min(1, bgm.volume + 0.2);">🔊</button>
+  <button onclick="let bgm=document.getElementById('bgm2'); bgm.volume = Math.max(0, bgm.volume - 0.2);">🔉</button>
+</p>
+
+<br>
+
+<p><font size="2">
+以下播放：
+</font></p>
+<p align="center"><b>
+Fire Emblem IV
+</b></p>
+
+<p align="center"><audio id="bgm" src="music/fe4-ch1.mp3" loop preload="auto"></audio>
+  <button onclick="const bgm=document.getElementById('bgm'); bgm.volume = 0.6; bgm.play();">▶️ 點播隱藏曲目</button>
+</p><p align="center">
+  <button onclick="const bgm=document.getElementById('bgm'); bgm.pause(); bgm.currentTime = 0;">⏹️停</button>
+  <button onclick="let bgm=document.getElementById('bgm'); bgm.volume = Math.min(1, bgm.volume + 0.2);">🔊</button>
+  <button onclick="let bgm=document.getElementById('bgm'); bgm.volume = Math.max(0, bgm.volume - 0.2);">🔉</button>
+</p>
+
 </body>
 </html>
